@@ -22,6 +22,12 @@
   display: block;
 }
 
+.icons i {
+  color: lightblue;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 .icons {
   border: solid;
   border-width: thin;
@@ -30,11 +36,17 @@
   display: flex;
 }
 
-.icons button{
+.icons button {
   flex-grow: 1;
+  flex-shrink: 1;
   border: solid;
   border-width: thin;
   border-color: skyblue;
+  background-color: white;
+}
+
+.icons button:hover {
+  background-color: skyblue;
 }
 
 button {
@@ -45,9 +57,26 @@ button {
   border: solid;
   border-width: thin;
   border-color: green;
-  margin: 5px 5px 5px 5px;
+  margin: 10px 5px 5px 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
 }
 
-#price {
+li {
+  display: inline-block;
+  color: skyblue;
+  font-size: 125%;
+  flex-shrink: 1;
+}
+
+.name {
+  flex-grow: 6;
+
+}
+
+.price {
+  flex-grow: 1;
   float: right;
+  font-weight: bold;
 }
