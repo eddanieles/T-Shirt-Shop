@@ -1,0 +1,53 @@
+.columns {
+  border: solid;
+  border-width: thin;
+  border-color: red;
+  width: 33%;
+}
+
+.shirt_box {
+  border: solid;
+  border-width: thin;
+  border-color: skyblue;
+  margin: 5px 5px 5px 5px;
+
+}
+
+.shirt_box img {
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.icons {
+  border: solid;
+  border-width: thin;
+  border-color: yellow;
+  margin: 5px 5px 5px 5px;
+  display: flex;
+}
+
+.icons button{
+  flex-grow: 1;
+  border: solid;
+  border-width: thin;
+  border-color: skyblue;
+}
+
+button {
+
+}
+
+.nameandprice {
+  border: solid;
+  border-width: thin;
+  border-color: green;
+  margin: 5px 5px 5px 5px;
+}
+
+#price {
+  float: right;
+}
