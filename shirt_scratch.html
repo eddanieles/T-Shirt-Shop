@@ -23,7 +23,7 @@
         flex-shrink: 1;
         border: solid;
         border-color: lightblue;
-        border-right: none;
+
       }
 
       li > i {
@@ -50,7 +50,7 @@
         border: solid;
         border-color: lightblue;
       }
-      .shirt_size_icon {
+      .shirt_size {
         margin: auto;
         display: block;
         margin-top: 5px;
@@ -73,7 +73,7 @@
   </head>
   <body>
     <object class="shirt_size" data="tshirt.svg" type="image/svg+xml"></object>
-
+    <img class="shirt_size" src="tshirt.svg" alt="Shirt Icon">
 
     <div id="wrapper">
 
@@ -83,10 +83,11 @@
         <li><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
 
           <ul id="shirt_submenu" class="submenu">
-            <li><img id="small_shirt" class="shirt_size_icon" src="shirt_size.png" alt="small"></li>
-            <li><img id="medium_shirt" class="shirt_size_icon" src="shirt_size.png" alt="medium"></li>
-            <li><img id="large_shirt" class="shirt_size_icon" src="shirt_size.png" alt="large"></li>
-            <li><img id="xlarge_shirt" class="shirt_size_icon" src="shirt_size.png" alt="xlarge"></li>
+
+            <li><img id="small_shirt" class="shirt_size" src="tshirt.svg" alt="Small Shirt Icon"></li>
+            <li><img id="medium_shirt" class="shirt_size" src="tshirt.svg" alt="Medium Shirt Icon"></li>
+            <li><img id="large_shirt" class="shirt_size" src="tshirt.svg" alt="Large Shirt Icon"></li>
+            <li><img id="xlarge_shirt" class="shirt_size" src="tshirt.svg" alt="X-Large Shirt Icon"></li>
           </ul>
 
         </li>
