@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shirt Scratch</title>
+    <script src="https://use.fontawesome.com/405f912d20.js"></script>
+
+    <style>
+
+      #wrapper {
+        width: 80%;
+        margin: auto;
+        background-color: lightgray;
+      }
+
+      .menu {
+        display: flex;
+        padding-left: 0px;
+      }
+
+      .menu > li {
+        position: relative;
+        display: inline-block;
+        flex-grow: 1;
+        flex-shrink: 1;
+        border: solid;
+        border-color: green;
+      }
+
+      i {
+        margin: auto;
+      }
+
+      .submenu {
+        position: absolute;
+        padding-left: 0px;
+        list-style-type: none;
+
+      }
+
+      #shirt_submenu {
+        width: 100%;
+      }
+
+      .shirt_size_icon {
+        margin: auto;
+        display: block;
+        margin-top: 10px;
+      }
+
+      #small_shirt {
+        width: 20%;
+
+      }
+
+      #medium_shirt {
+        width: 30%;
+      }
+
+      #large_shirt {
+        width: 40%;
+      }
+
+      #xlarge_shirt {
+        width: 50%;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <object class="shirt_size" data="tshirt.svg" type="image/svg+xml"></object>
+
+
+    <div id="wrapper">
+
+      <ul class="menu">
+        <li><i class="fa fa-exchange fa-lg" aria-hidden="false"></i></li>
+        <li><i class="fa fa-heart-o fa-lg" aria-hidden="true"></i></li>
+        <li><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+
+          <ul id="shirt_submenu" class="submenu">
+            <li><img id="small_shirt" class="shirt_size_icon" src="shirt_size.png" alt="small"></li>
+            <li><img id="medium_shirt" class="shirt_size_icon" src="shirt_size.png" alt="medium"></li>
+            <li><img id="large_shirt" class="shirt_size_icon" src="shirt_size.png" alt="large"></li>
+            <li><img id="xlarge_shirt" class="shirt_size_icon" src="shirt_size.png" alt="xlarge"></li>
+          </ul>
+
+        </li>
+
+        <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
+        <li><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></li>
+
+      </ul>
+
+    </div>
+
+  </body>
+</html>
