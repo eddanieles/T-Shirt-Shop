@@ -15,7 +15,7 @@
   height: 10%;
 }
 
-i:hover {
+i:hover { /* this will reference all i elements */
   background-color: lightblue;
   color: white;
 }
