@@ -1,16 +1,11 @@
 .columns {
-  border: solid;
-  border-width: thin;
-  border-color: red;
+  border: 1px solid red; /* border */
   width: 33%;
 }
 
 .shirt_box {
-  border: solid;
-  border-width: thin;
-  border-color: skyblue;
-  margin: 5px 5px 5px 5px;
-
+  border: 1px solid lightblue; /* border */
+  margin: 5px;
 }
 
 .shirt_box img {
@@ -29,10 +24,8 @@
 }
 
 .icons {
-  border: solid;
-  border-width: thin;
-  border-color: yellow;
-  margin: 5px 5px 5px 5px;
+  border: 1px solid yellow; /* border */
+  margin: 5px;
   display: flex;
 }
 
@@ -54,29 +47,21 @@ button {
 }
 
 .nameandprice {
-  border: solid;
-  border-width: thin;
-  border-color: green;
+  border: 1px solid green; /* border */
   margin: 10px 5px 5px 5px;
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
-}
-
-li {
-  display: inline-block;
   color: skyblue;
   font-size: 125%;
-  flex-shrink: 1;
+  list-style-type: none;
 }
 
 .name {
-  flex-grow: 6;
-
+  flex: 6 1 0;
 }
 
 .price {
-  flex-grow: 1;
-  float: right;
+  flex: 1 1 0;
   font-weight: bold;
 }
