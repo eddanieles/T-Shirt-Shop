@@ -8,7 +8,7 @@
 
     <style>
 
-      #wrapper {
+      .wrapper {
         width: 80%;
         margin: auto;
       }
@@ -48,7 +48,7 @@
         display: block;
       }
 
-      #shirt_submenu {
+      .shirt_submenu {
         width: 100%;
         border: solid;
         border-color: lightblue;
@@ -59,16 +59,16 @@
         margin-top: 5px;
         margin-bottom: 5px;
       }
-      #small_shirt {
+      .small_shirt {
         width: 20%;
       }
-      #medium_shirt {
+      .medium_shirt {
         width: 30%;
       }
-      #large_shirt {
+      .large_shirt {
         width: 40%;
       }
-      #xlarge_shirt {
+      .xlarge_shirt {
         width: 50%;
       }
     </style>
@@ -78,19 +78,19 @@
     <object class="shirt_size" data="tshirt.svg" type="image/svg+xml"></object>
     <img class="shirt_size" src="tshirt.svg" alt="Shirt Icon">
 
-    <div id="wrapper">
+    <div class="wrapper">
 
       <ul class="menu">
         <li><i class="fa fa-exchange fa-lg" aria-hidden="false"></i></li>
         <li><i class="fa fa-heart-o fa-lg" aria-hidden="true"></i></li>
         <li><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
 
-          <ul id="shirt_submenu" class="submenu">
+          <ul class="submenu shirt_submenu">
 
-            <li><img id="small_shirt" class="shirt_size" src="tshirt.svg" alt="Small Shirt Icon"></li>
-            <li><img id="medium_shirt" class="shirt_size" src="tshirt.svg" alt="Medium Shirt Icon"></li>
-            <li><img id="large_shirt" class="shirt_size" src="tshirt.svg" alt="Large Shirt Icon"></li>
-            <li><img id="xlarge_shirt" class="shirt_size" src="tshirt.svg" alt="X-Large Shirt Icon"></li>
+            <li><img class="shirt_size small_shirt" src="tshirt.svg" alt="Small Shirt Icon"></li>
+            <li><img class="shirt_size medium_shirt" src="tshirt.svg" alt="Medium Shirt Icon"></li>
+            <li><img class="shirt_size large_shirt" src="tshirt.svg" alt="Large Shirt Icon"></li>
+            <li><img class="shirt_size xlarge_shirt" src="tshirt.svg" alt="X-Large Shirt Icon"></li>
           </ul>
 
         </li>
