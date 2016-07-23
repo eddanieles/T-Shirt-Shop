@@ -43,43 +43,115 @@ i:hover { /* this will reference all i elements */
 }
 
 /* start of menu */
-
-.icons i {
-  color: lightblue;
-  margin-top: 8px;
-  margin-bottom: 8px;
+.wrapper {
+  width: 100%;
+  margin: auto;
 }
 
-.icons {
-  border: 1px solid yellow; /* border */
-  margin: 5px;
+.menu {
   display: flex;
+  padding-left: 0px;
+  margin: 0;
 }
 
-.icons button {
+.menu > li {
+  position: relative;
+
   flex-grow: 1;
   flex-shrink: 1;
-  border: solid;
-  border-width: thin;
-  border-color: skyblue;
-  background-color: white;
-}
+  border: 1px solid lightblue;
 
-.icons button:hover {
-  background-color: skyblue;
-}
-
-button {
 
 }
+
+li {
+  color: lightblue;
+  text-align: center;
+  list-style-type: none;
+}
+
+li:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+.submenu {
+  position: absolute;
+  padding-left: 0px;
+  list-style-type: none;
+  display: none;
+  width: 110%;
+  border: 1px solid lightblue;
+
+  bottom: 20px; /*moves submenu up*/
+}
+
+.menu li:hover .submenu {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* start of shirt box*/
+
+.shirt_submenu {
+
+}
+
+.shirt_size {
+  margin: auto;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.small_shirt {
+  width: 20%;
+}
+.medium_shirt {
+  width: 30%;
+}
+.large_shirt {
+  width: 40%;
+}
+.xlarge_shirt {
+  width: 50%;
+}
+
+/* start of square box*/
+.row {
+  display: flex;
+  padding: 0;
+}
+
+.row li {
+  flex: 1 1 0;
+  margin: 5px;
+}
+
+.blue_square {
+  color: skyblue;
+}
+
+.pink_square {
+  color: pink;
+}
+
+.orange_square {
+  color: coral;
+}
+
+.green_square {
+  color: lightgreen;
+}
+
+
 
 /* start of name and price section */
 
 .nameandprice {
   border: 1px solid green; /* border */
   margin: 10px 5px 5px 5px;
-  padding-left: 10px;
   padding-right: 10px;
+  padding-left: 10px;
   display: flex;
   color: skyblue;
   font-size: 125%;
@@ -87,10 +159,12 @@ button {
 }
 
 .name {
-  flex: 6 1 0;
+  flex: 2 1 0;
+  text-align: left;
 }
 
 .price {
   flex: 1 1 0;
   font-weight: bold;
+  text-align: right;
 }
