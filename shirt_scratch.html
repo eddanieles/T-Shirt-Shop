@@ -42,7 +42,9 @@
         padding-left: 0px;
         list-style-type: none;
         display: none;
-
+        width: 100%;
+        border: solid;
+        border-color: lightblue;
       }
 
       .menu li:hover .submenu {
@@ -50,9 +52,7 @@
       }
 
       .shirt_submenu {
-        width: 100%;
-        border: solid;
-        border-color: lightblue;
+
       }
 
       .shirt_size {
@@ -73,6 +73,16 @@
       .xlarge_shirt {
         width: 50%;
       }
+
+      .row {
+        display: flex;
+        padding: 0;
+      }
+
+      .row li {
+        flex: 1 1 0;
+      }
+
     </style>
 
   </head>
@@ -95,9 +105,24 @@
             <li><img class="shirt_size xlarge_shirt" src="tshirt.svg" alt="X-Large Shirt Icon"></li>
           </ul>
 
-        </li>
+        </li> <!--end of shirt box-->
 
-        <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
+        <li><i class="fa fa-square fa-lg" aria-hidden="true"></i>
+
+          <ul class="submenu color_box_submenu">
+            <ul class="row">
+              <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
+              <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
+            </ul>
+
+            <ul class="row">
+              <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
+              <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
+            </ul>
+          </ul> <!--end of color_box_submenu-->
+
+        </li>   <!--end of color box-->
+
         <li><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></li>
 
       </ul>
