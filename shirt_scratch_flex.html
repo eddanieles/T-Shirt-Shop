@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shirt Scratch Flex</title>
+    <script src="https://use.fontawesome.com/405f912d20.js"></script>
+    <style>
+      #wrapper {
+        width: 80%;
+        margin: auto;
+        height: 800px;
+      }
+
+      .menu {
+        border: 5px solid blue;
+        padding: 5px;
+        display: flex;
+      }
+
+      li {
+        flex: 1 1 0;
+        list-style-type: none;
+        border: 3px solid lightgreen;
+        text-align: center;
+        color: blue;
+      }
+
+      li:hover {
+        background-color: lightblue;
+      }
+
+      .submenu {
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+
+      }
+
+      .small_shirt {
+        width: 20%;
+      }
+      .medium_shirt {
+        width: 30%;
+      }
+      .large_shirt {
+        width: 40%;
+      }
+      .xlarge_shirt {
+        width: 50%;
+      }
+
+      .row {
+        display: flex;
+        padding: 0;
+      }
+
+      .row li {
+        flex: 1 1 0;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <ul class="menu">
+        <li><i class="fa fa-exchange fa-lg" aria-hidden="false"></i></li>
+        <li><i class="fa fa-heart-o fa-lg" aria-hidden="true"></i></li>
+        <li><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+
+          <ul class="submenu">
+
+            <li class="shirt_submenu"><img class="shirt_size small_shirt" src="tshirt.svg" alt="Small Shirt Icon"></li>
+            <li class="shirt_submenu"><img class="shirt_size medium_shirt" src="tshirt.svg" alt="Medium Shirt Icon"></li>
+            <li class="shirt_submenu"><img class="shirt_size large_shirt" src="tshirt.svg" alt="Large Shirt Icon"></li>
+            <li class="shirt_submenu"><img class="shirt_size xlarge_shirt" src="tshirt.svg" alt="X-Large Shirt Icon"></li>
+          </ul> <!--end of shirt_submenu-->
+
+        </li> <!--end of shirt-->
+
+        <li><i class="fa fa-square fa-lg" aria-hidden="true"></i>
+          <ul class="submenu color_box_submenu">
+            <ul class="row">
+              <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
+              <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
+            </ul>
+
+            <ul class="row">
+              <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
+              <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
+            </ul>
+          </ul> <!--end of color_box_submenu-->
+
+        </li> <!--end of color box-->
+
+        <li><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></li>
+
+      </ul> <!-- end of menu ul -->
+
+
+    </div> <!-- end of div wrapper -->
+
+
+  </body>
+
+</html>
