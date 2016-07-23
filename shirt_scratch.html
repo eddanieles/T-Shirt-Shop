@@ -42,14 +42,18 @@
         padding-left: 0px;
         list-style-type: none;
         display: none;
-        width: 100%;
+        width: 110%;
         border: solid;
         border-color: lightblue;
+        bottom: 20px; /*moves submenu up*/
       }
 
       .menu li:hover .submenu {
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
       }
+
+/* start of shirt box*/
 
       .shirt_submenu {
 
@@ -74,6 +78,7 @@
         width: 50%;
       }
 
+/* start of square box*/
       .row {
         display: flex;
         padding: 0;
@@ -81,7 +86,26 @@
 
       .row li {
         flex: 1 1 0;
+        margin: 5px;
       }
+
+      .blue_square {
+        color: skyblue;
+      }
+
+      .pink_square {
+        color: pink;
+      }
+
+      .orange_square {
+        color: coral;
+      }
+
+      .green_square {
+        color: lightgreen;
+      }
+
+
 
     </style>
 
@@ -107,17 +131,17 @@
 
         </li> <!--end of shirt box-->
 
-        <li><i class="fa fa-square fa-lg" aria-hidden="true"></i>
+        <li><i class="fa fa-square fa-lg blue_square" aria-hidden="true"></i>
 
           <ul class="submenu color_box_submenu">
             <ul class="row">
-              <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
-              <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
+              <li><i class="fa fa-square fa-lg blue_square" aria-hidden="true"></i></li>
+              <li><i class="fa fa-square fa-lg pink_square" aria-hidden="true"></i></li>
             </ul>
 
             <ul class="row">
-              <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
-              <li><i class="fa fa-square fa-lg" aria-hidden="true"></i></li>
+              <li><i class="fa fa-square fa-lg orange_square" aria-hidden="true"></i></li>
+              <li><i class="fa fa-square fa-lg green_square" aria-hidden="true"></i></li>
             </ul>
           </ul> <!--end of color_box_submenu-->
 

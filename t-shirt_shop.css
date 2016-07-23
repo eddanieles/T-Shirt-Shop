@@ -3,9 +3,27 @@
   width: 33%;
 }
 
-.shirt_box {
-  border: 1px solid lightblue; /* border */
-  margin: 5px;
+/* start of shirt */
+
+.shirt {
+  display: flex;
+}
+
+.shirt i {
+  position: relative;
+  margin-left: -22px;
+  height: 10%;
+}
+
+i:hover { /* this will reference all i elements */
+  background-color: lightblue;
+  color: white;
+}
+
+.fa-undo {
+  color: lightblue;
+  border: 1px solid lightblue;
+  padding: 3px;
 }
 
 .shirt_box img {
@@ -16,6 +34,15 @@
   margin-right: auto;
   display: block;
 }
+
+/* start of shirt box */
+
+.shirt_box {
+  border: 1px solid lightblue; /* border */
+  margin: 5px;
+}
+
+/* start of menu */
 
 .icons i {
   color: lightblue;
@@ -45,6 +72,8 @@
 button {
 
 }
+
+/* start of name and price section */
 
 .nameandprice {
   border: 1px solid green; /* border */
