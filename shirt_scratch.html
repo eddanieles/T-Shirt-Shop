@@ -42,14 +42,18 @@
         padding-left: 0px;
         list-style-type: none;
         display: none;
-        width: 100%;
+        width: 110%;
         border: solid;
         border-color: lightblue;
+        bottom: 20px; /*moves submenu up*/
       }
 
       .menu li:hover .submenu {
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
       }
+
+/* start of shirt box*/
 
       .shirt_submenu {
 
@@ -74,6 +78,7 @@
         width: 50%;
       }
 
+/* start of square box*/
       .row {
         display: flex;
         padding: 0;
@@ -99,6 +104,8 @@
       .green_square {
         color: lightgreen;
       }
+
+
 
     </style>
 
