@@ -1,5 +1,5 @@
 .columns {
-  border: 1px solid red; /* border */
+//  border: 1px solid red; /* border */
   width: 33%;
 }
 
@@ -15,7 +15,7 @@
   height: 10%;
 }
 
-i:hover { /* this will reference all i elements */
+.shirt i:hover { /* this will reference all i elements */
   background-color: lightblue;
   color: white;
 }
@@ -23,6 +23,8 @@ i:hover { /* this will reference all i elements */
 .fa-undo {
   color: lightblue;
   border: 1px solid lightblue;
+  border-top: none;
+  border-right: none;
   padding: 3px;
 }
 
@@ -60,19 +62,24 @@ i:hover { /* this will reference all i elements */
   flex-grow: 1;
   flex-shrink: 1;
   border: 1px solid lightblue;
-
-
+  border-bottom: none;
+  border-right: none;
 }
 
+
 li {
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: lightblue;
   text-align: center;
   list-style-type: none;
+  transition: width 2s; /*example transition, not working timing is off */
 }
 
 li:hover {
   background-color: lightblue;
   color: white;
+  width: 100px; /*example transition */
 }
 
 .submenu {
@@ -82,13 +89,15 @@ li:hover {
   display: none;
   width: 110%;
   border: 1px solid lightblue;
-
-  bottom: 20px; /*moves submenu up*/
+  transition: transform 10s; /* not working, timing is off */
+  bottom: 40px; /*moves submenu up*/
 }
 
 .menu li:hover .submenu {
   display: flex;
   flex-direction: column-reverse;
+  transform: translate(0px, 12px);
+
 }
 
 /* start of shirt box*/
@@ -103,6 +112,9 @@ li:hover {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+/* below is replaced with inline styling
+
 .small_shirt {
   width: 20%;
 }
@@ -115,6 +127,8 @@ li:hover {
 .xlarge_shirt {
   width: 50%;
 }
+
+*/
 
 /* start of square box*/
 .row {
@@ -148,7 +162,7 @@ li:hover {
 /* start of name and price section */
 
 .nameandprice {
-  border: 1px solid green; /* border */
+//  border: 1px solid green; /* border */
   margin: 10px 5px 5px 5px;
   padding-right: 10px;
   padding-left: 10px;
@@ -156,6 +170,7 @@ li:hover {
   color: skyblue;
   font-size: 125%;
   list-style-type: none;
+  pointer-events: none;
 }
 
 .name {
