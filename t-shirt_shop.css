@@ -1,11 +1,15 @@
 body {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+
 }
 
 .columns {
 //  border: 1px solid red; /* border */
   width: 30%;
+  min-width: 200px;
+  min-height: 325px;
 }
 
 /* start of shirt */
@@ -79,7 +83,7 @@ li {
   text-align: center;
   list-style-type: none;
   transition: width 2s, color 2s; /*example transition, width not working timing is off */
-  
+
 }
 
 li:hover {
