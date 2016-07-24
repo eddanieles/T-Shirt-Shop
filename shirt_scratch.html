@@ -94,6 +94,7 @@
         background-color: lightblue;
         color: white;
         width: 100px; /*example transition */
+
       }
 
       .submenu {
@@ -107,10 +108,14 @@
         bottom: 45px; /*moves submenu up*/
       }
 
+      .submenu li {
+        width: 100%;
+      }
+
       .menu li:hover .submenu {
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-around;
+
         transform: translate(0px, 12px);
 
       }
