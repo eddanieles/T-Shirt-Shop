@@ -12,29 +12,88 @@
         width: 80%;
         margin: auto;
       }
+      .columns {
+      //  border: 1px solid red; /* border */
+        width: 30%;
+      }
+
+      /* start of shirt */
+
+      .shirt {
+        display: flex;
+      }
+
+      .shirt i {
+        position: relative;
+        margin-left: -22px;
+        height: 10%;
+      }
+
+      .shirt i:hover { /* this will reference all i elements */
+        background-color: lightblue;
+        color: white;
+      }
+
+      .fa-undo {
+        color: lightblue;
+        border: 2px solid lightblue;
+        border-top: none;
+        border-right: none;
+        padding: 3px;
+      }
+
+      .shirt_box img {
+        width: 80%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      /* start of shirt box */
+
+      .shirt_box {
+        border: 2px solid lightblue; /* border */
+        margin: 5px;
+      }
+
+      /* start of menu */
+      .wrapper {
+        width: 100%;
+        margin: auto;
+      }
+
       .menu {
         display: flex;
         padding-left: 0px;
+        margin: 0;
       }
+
       .menu > li {
         position: relative;
 
         flex-grow: 1;
         flex-shrink: 1;
-        border: 1px solid lightblue;
-
-
+        border: 2px solid lightblue; /*border for menu icon*/
+        border-bottom: none;
+        border-right: none;
       }
 
+
       li {
+        padding-top: 5px;
+        padding-bottom: 5px;
         color: lightblue;
         text-align: center;
         list-style-type: none;
+        transition: width 2s; /*example transition, not working timing is off */
       }
 
       li:hover {
         background-color: lightblue;
         color: white;
+        width: 100px; /*example transition */
       }
 
       .submenu {
@@ -43,17 +102,19 @@
         list-style-type: none;
         display: none;
         width: 110%;
-        border: 1px solid lightblue;
-
-        bottom: 20px; /*moves submenu up*/
+        border: 2px solid lightblue;
+        transition: transform 10s; /* not working, timing is off */
+        bottom: 50px; /*moves submenu up*/
       }
 
       .menu li:hover .submenu {
         display: flex;
         flex-direction: column-reverse;
+        transform: translate(0px, 12px);
+
       }
 
-/* start of shirt box*/
+      /* start of shirt box*/
 
       .shirt_submenu {
 
@@ -65,6 +126,9 @@
         margin-top: 5px;
         margin-bottom: 5px;
       }
+
+      /* below is replaced with inline styling
+
       .small_shirt {
         width: 20%;
       }
@@ -78,7 +142,9 @@
         width: 50%;
       }
 
-/* start of square box*/
+      */
+
+      /* start of square box*/
       .row {
         display: flex;
         padding: 0;
@@ -97,8 +163,8 @@
         color: pink;
       }
 
-      .orange_square {
-        color: coral;
+      .yellow_square {
+        color: yellow;
       }
 
       .green_square {
@@ -107,6 +173,66 @@
 
 
 
+      /* start of name and price section */
+
+      .nameandprice {
+      //  border: 1px solid green; /* border */
+        margin: 10px 5px 5px 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        display: flex;
+        color: skyblue;
+        font-size: 125%;
+        list-style-type: none;
+        pointer-events: none;
+      }
+
+      .name {
+        flex: 2 1 0;
+        text-align: left;
+      }
+
+      .price {
+        flex: 1 1 0;
+        font-weight: bold;
+        text-align: right;
+      }
+
+      .shirt_back {
+        position: absolute;
+      }
+
+      .fa-square {
+        border: solid;
+      }
+      li:hover .fa-square {
+        border-color: white;
+      }
+
+      #box {
+          width: 350px;
+          height: 350px;
+          border: 5px black solid;
+          overflow: hidden;
+          background-color: #F2F2F2;
+      }
+      #box img {
+        transform: translate3d(0, -350px, 0);
+        transition: all 2s;
+      }
+
+      #box img:hover {
+        transform: translate3d(0, 0px, 0);
+      }
+
+      .arrow {
+        width: 5px;
+        height: 5px;
+        border-right: 2px solid lightblue;
+        border-bottom: 2px solid lightblue;
+        transform: rotate(45deg);
+      }
+
     </style>
 
   </head>
@@ -114,44 +240,72 @@
     <object class="shirt_size" data="tshirt.svg" type="image/svg+xml"></object>
     <img class="shirt_size" src="tshirt.svg" alt="Shirt Icon">
 
-    <div class="wrapper">
+    <div class="columns"> <!-- start of blue column -->
 
-      <ul class="menu">
-        <li><i class="fa fa-exchange fa-lg" aria-hidden="false"></i></li>
-        <li><i class="fa fa-heart-o fa-lg" aria-hidden="true"></i></li>
-        <li><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
+      <div class="shirt_box">
 
-          <ul class="submenu shirt_submenu">
+          <div class="shirt">
 
-            <li><img class="shirt_size small_shirt" src="tshirt.svg" alt="Small Shirt Icon"></li>
-            <li><img class="shirt_size medium_shirt" src="tshirt.svg" alt="Medium Shirt Icon"></li>
-            <li><img class="shirt_size large_shirt" src="tshirt.svg" alt="Large Shirt Icon"></li>
-            <li><img class="shirt_size xlarge_shirt" src="tshirt.svg" alt="X-Large Shirt Icon"></li>
-          </ul> <!--end of shirt_submenu-->
+              <img class="shirt_front" src="shirts/blue-front.png" alt="Blue Front">
+              <img class="shirt_back" src="shirts/blue-back.png" alt="Blue Front">
+              <i class="fa fa-undo" aria-hidden="true"></i>
+          </div>
 
-        </li> <!--end of shirt box-->
+          <div class="wrapper">
 
-        <li><i class="fa fa-square fa-lg blue_square" aria-hidden="true"></i>
+            <ul class="menu">
+              <li style="border-left: none;"><i class="fa fa-exchange fa-lg" aria-hidden="false"></i></li>
+              <li><i class="fa fa-heart-o fa-lg" aria-hidden="true"></i></li>
+              <li><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
 
-          <ul class="submenu color_box_submenu">
-            <ul class="row">
-              <li><i class="fa fa-square fa-lg orange_square" aria-hidden="true"></i></li>
-              <li><i class="fa fa-square fa-lg green_square" aria-hidden="true"></i></li>
-            </ul>
 
-            <ul class="row">
-              <li><i class="fa fa-square fa-lg blue_square" aria-hidden="true"></i></li>
-              <li><i class="fa fa-square fa-lg pink_square" aria-hidden="true"></i></li>
-            </ul>
-          </ul> <!--end of color_box_submenu-->
+                <ul class="submenu shirt_submenu">
+                  <div class="arrow"></div>
+                  <li><img class="shirt_size small_shirt" src="tshirt.svg" alt="Small Shirt Icon" style="width: 20%;"></li>
+                  <li><img class="shirt_size medium_shirt" src="tshirt.svg" alt="Medium Shirt Icon" style="width: 30%;"></li>
+                  <li><img class="shirt_size large_shirt" src="tshirt.svg" alt="Large Shirt Icon" style="width: 40%;"></li>
+                  <li><img class="shirt_size xlarge_shirt" src="tshirt.svg" alt="X-Large Shirt Icon" style="width: 50%;"></li>
+                </ul> <!--end of shirt_submenu-->
 
-        </li>   <!--end of color box-->
+              </li> <!--end of shirt box-->
 
-        <li><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></li>
+              <li><i class="fa fa-square fa-lg blue_square" aria-hidden="true"></i>
 
-      </ul> <!-- end of menu list -->
+                <ul class="submenu color_box_submenu">
+                  <ul class="row">
+                    <li><i class="fa fa-square fa-lg yellow_square" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-square fa-lg green_square" aria-hidden="true"></i></li>
+                  </ul>
 
-    </div> <!-- end of wrapper -->
+                  <ul class="row">
+                    <li><i class="fa fa-square fa-lg blue_square" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-square fa-lg pink_square" aria-hidden="true"></i></li>
+                  </ul>
+                </ul> <!--end of color_box_submenu-->
+
+              </li>   <!--end of color box-->
+
+              <li><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></li>
+
+            </ul> <!-- end of menu list -->
+
+          </div> <!-- end of wrapper -->
+
+      </div>
+
+      <ul class="nameandprice">
+          <li class="name">Save my trees</li>
+          <li class="price">$29</li>
+      </ul>
+
+    </div> <!-- end of blue column -->
+
+    <div id="box">
+
+    <img height="700" src="frontback_shirt.png" width="350"></div>
+
+    <script src="https://www.kirupa.com/prefixfree.min.js"></script>
+
 
   </body>
 </html>

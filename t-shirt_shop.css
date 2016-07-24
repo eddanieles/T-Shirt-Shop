@@ -1,11 +1,15 @@
 body {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+
 }
 
 .columns {
 //  border: 1px solid red; /* border */
-  width: 33%;
+  width: 30%;
+  min-width: 200px;
+  min-height: 325px;
 }
 
 /* start of shirt */
@@ -20,14 +24,14 @@ body {
   height: 10%;
 }
 
-.shirt i:hover { /* this will reference all i elements */
+.shirt i:hover {
   background-color: lightblue;
   color: white;
 }
 
 .fa-undo {
   color: lightblue;
-  border: 1px solid lightblue;
+  border: 2px solid lightblue;
   border-top: none;
   border-right: none;
   padding: 3px;
@@ -45,7 +49,7 @@ body {
 /* start of shirt box */
 
 .shirt_box {
-  border: 1px solid lightblue; /* border */
+  border: 2px solid lightblue; /* border */
   margin: 5px;
 }
 
@@ -66,7 +70,7 @@ body {
 
   flex-grow: 1;
   flex-shrink: 1;
-  border: 1px solid lightblue;
+  border: 2px solid lightblue; /*border for menu icon*/
   border-bottom: none;
   border-right: none;
 }
@@ -78,13 +82,15 @@ li {
   color: lightblue;
   text-align: center;
   list-style-type: none;
-  transition: width 2s; /*example transition, not working timing is off */
+  transition: width 2s, color 2s; /*example transition, width not working timing is off */
+
 }
 
 li:hover {
   background-color: lightblue;
-  color: white;
+  color: white;  /*example transition */
   width: 100px; /*example transition */
+
 }
 
 .submenu {
@@ -93,7 +99,7 @@ li:hover {
   list-style-type: none;
   display: none;
   width: 110%;
-  border: 1px solid lightblue;
+  border: 2px solid lightblue;
   transition: transform 10s; /* not working, timing is off */
   bottom: 40px; /*moves submenu up*/
 }
