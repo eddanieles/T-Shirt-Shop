@@ -20,7 +20,7 @@ body {
   height: 10%;
 }
 
-.shirt i:hover { /* this will reference all i elements */
+.shirt i:hover {
   background-color: lightblue;
   color: white;
 }
@@ -78,13 +78,15 @@ li {
   color: lightblue;
   text-align: center;
   list-style-type: none;
-  transition: width 2s; /*example transition, not working timing is off */
+  transition: width 2s, color 2s; /*example transition, width not working timing is off */
+  
 }
 
 li:hover {
   background-color: lightblue;
-  color: white;
+  color: white;  /*example transition */
   width: 100px; /*example transition */
+
 }
 
 .submenu {
