@@ -104,12 +104,13 @@
         width: 110%;
         border: 2px solid lightblue;
         transition: transform 10s; /* not working, timing is off */
-        bottom: 50px; /*moves submenu up*/
+        bottom: 45px; /*moves submenu up*/
       }
 
       .menu li:hover .submenu {
         display: flex;
         flex-direction: column-reverse;
+        justify-content: space-around;
         transform: translate(0px, 12px);
 
       }
@@ -233,7 +234,7 @@
         transform: rotate(45deg);
         margin: auto;
         display: block;
-    
+
       }
 
     </style>
