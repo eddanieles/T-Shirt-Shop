@@ -111,6 +111,10 @@ li:hover {
 
 }
 
+.submenu li {
+  width: 100%;
+}
+
 /* start of shirt box*/
 
 .shirt_submenu {
